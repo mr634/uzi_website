@@ -92,6 +92,7 @@ input::-moz-focus-inner {
 input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
+	
 	-ms-appearance: none;
 	appearance: none;
 }
@@ -1550,6 +1551,7 @@ input, select, textarea {
 		-ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		-webkit-appearance: none;
+		appearance: none; /* For modern browsers */
 		display: block;
 		border: 0;
 		padding: 0.75em;
@@ -1710,6 +1712,7 @@ input, select, textarea {
 		-ms-transition: background-color .2s ease-in-out;
 		transition: background-color .2s ease-in-out;
 		-webkit-appearance: none;
+		appearance: none; /* For modern browsers */
 		position: relative;
 		display: inline-block;
 		color: #ffffff !important;
@@ -2199,7 +2202,7 @@ input, select, textarea {
 	}
 	
 	.contact-info {
-		margin-top: 20px;s
+		margin-top: 20px;
 	}
 
 
