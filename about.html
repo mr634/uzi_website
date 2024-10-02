@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>УЗИ кабинет Исаевой</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="container">
+				<li><a href="index.html#top">Главная</a></li>
+				<li><a href="index.html#work">Услуги и цены</a></li>
+				<li><a href="index.html#contact">Контакты</a></li>
+				<li><a href="about.html">О нас</a></li>
+			</ul>
+		</nav>
+
+
+			
+			<header>
+				<h1 style="margin: 0.75em 0 0.75em 0.75em;">УЗИ кабинет Исаевой</h1>
+			</header>		
+				<div class="carousel">
+					<div class="overlay"></div>
+					<div class="carousel__content">
+					<div class="carousel__item">
+						<img src="images/cabinet.JPG" alt="Photo 1">
+					</div>
+					<div class="carousel__item">
+						<img src="images/mom.JPG" alt="Photo 2">
+					</div>
+					<div class="carousel__item">
+						<img src="images/all.JPG" alt="Photo 3">
+					</div>
+					<div class="carousel__item">
+						<img src="images/mom2.jpg" alt="Photo 4">
+					</div>
+				</div>
+				</div>
+
+			<script>
+				let currentIndex = 0;
+				const slidesContainer = document.querySelector('.carousel__content');
+				const totalSlides = document.querySelectorAll('.carousel__item').length;
+
+				function nextSlide() {
+					currentIndex = (currentIndex + 1) % totalSlides; // Loop back to the first slide
+					slidesContainer.style.transform = `translateX(-${currentIndex * (100 / 3)}%)`; // Move the slides container
+				}
+
+				// Change slide every 3 seconds
+				setInterval(nextSlide, 3000);
+
+				// Clone first two items for seamless looping effect
+				const firstClone = slidesContainer.children[0].cloneNode(true);
+				const secondClone = slidesContainer.children[1].cloneNode(true);
+				slidesContainer.appendChild(firstClone);
+				slidesContainer.appendChild(secondClone);
+			</script>
+			
+			
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container large">
+					<header>
+						<h2>Наши сотрудники</h2>
+					</header>
+					<div class="row aln-center">
+						<div class="col col-6">
+							<article class="box style1">
+								<a  class="image featured"><img src="images/svetlana.jpg" alt=""/></a>
+								<h3>Светлана Викторовна Исаева</h3>
+								<p>Врач УЗИ и гинекологии</p>
+							</article>
+						</div>
+						<div class="col col-6">
+							<article class="box style1">
+								<a class="image featured"><img src="images/larisa2.jpg" alt="" /></a>
+								<h3>Лариса Викторона Федотова</h3>
+								<p>Врач УЗИ</p>
+							</article>
+						</div>
+					</div>
+					<div class="row aln-center">
+						<div class="col col-6">
+							<article class="box style1">
+								<a class="image featured"><img src="images/oksana1.jpg" alt="" /></a>
+								<h3>Оксана Васильевна Игнатьева</h3>
+								<p>Администратор</p>
+							</article>
+						</div>
+						<div class="col col-6">
+							<article class="box style1">
+								<a class="image featured"><img src="images/tanya.jpg" alt="" /></a>
+								<h3>Татьяна Уварова</h3>
+								<p>Администратор</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</article>
+		
+				<!-- New Section: Правовые документы -->
+			<article id="contact" class="wrapper style4">
+				<div class="contact-info">
+				<h2>Правовые документы</h2>
+				<ul style="list-style-type: none; text-align: left; padding-left: 100px;">
+					<li><a href="images/единый гос.jpg" target="_blank">Свидетельство о внесении записи в Единый государственный реестр юридических лиц</a></li>
+					<li><a href="images/лицензия.jpg" target="_blank">Лицензия на осуществление медицинской деятельности</a></li>
+					<li><a href="images/Устав №21.pdf" target="_blank">Устав ООО "УЗИ кабинет Исаевой"</a></li>
+					<li><a href="images/Политика обработки и защиты персональных данных медицинской организации.docx" target="_blank">Политика обработки и защиты персональных данных медицинской организации</a></li>
+
+				</ul>
+			</div>
+			</article>
+
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container large">
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
