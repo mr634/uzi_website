@@ -74,39 +74,77 @@
 						<h2>Наши сотрудники</h2>
 					</header>
 					<div class="row aln-center">
-						<div class="col col-6">
+						<div class="col-6 col-12-medium">
 							<article class="box style1">
 								<a  class="image featured"><img src="images/svetlana.jpg" alt=""/></a>
 								<h3>Светлана Викторовна Исаева</h3>
-								<p>Врач УЗИ и гинекологии</p>
+								<p>Врач УЗД и акушер-гинеколог</p>
+								<a href="#" class="expand-link" onclick="toggleInfo('info-svetlana'); return false;">Читать подробнее...</a>
+								<div id="info-svetlana" class="doctor-info" style="display: none;">
+									<p><strong>Образование:</strong> В 1997 г. закончила Самарский государственный медицинский университет по специальности педиатрия.</p>
+    
+									<p><strong>Профессиональная переподготовка:</strong> 
+										В 2000 г. получила переподготовку по специальности акушерства и гинекологии и работала врачом акушер-гинекологом в Кинельской ЦРБ. 
+										В 2003 г. с отличием завершила переподготовку по специальности ультразвуковая диагностика и работала в ООО «Твой доктор».
+									</p>
+									
+									<p><strong>Дополнительное обучение и повышение квалификации:</strong> 
+										оперативная гинекология, основы кольпоскопии, УЗИ исследование сосудов нижних и верхних конечностей, 
+										основные варианты врожденных аномалий плода, осложнения гистероскопии, 
+										здоровье и здоровьесберегающие технологии, патология шейки матки и репродуктивное здоровье, 
+										урогенитальные расстройства у женщин, перекруты и разрывы придатков, 
+										неотложная и экстренная медицинская помощь на догоспитальном этапе.
+									</p>
+									
+									<p><strong>Специальности УЗИ:</strong> УЗД в акушерстве, УЗД в гинекологии, УЗД в онкогинекологии, 
+										Эхокардиография, УЗД в хирургии, допплерография сосудов головы и шеи, 
+										допплерография в акушерстве, допплерография сосудов конечностей, 
+										ультразвуковые и медико-генетические аспекты пренатальной диагностики.
+									</p>				
+								</div>
 							</article>
 						</div>
-						<div class="col col-6">
+						<div class="col-6 col-12-medium">
 							<article class="box style1">
 								<a class="image featured"><img src="images/larisa2.jpg" alt="" /></a>
 								<h3>Лариса Викторона Федотова</h3>
-								<p>Врач УЗИ</p>
+								<p>Врач УЗД</p>
+								<a href="#" class="expand-link" onclick="toggleInfo('info-larisa'); return false;">Читать подробнее...</a>
+								<div id="info-larisa" class="doctor-info" style="display: none;">
+									<p>Лариса Викторона Федотова - опытный врач УЗД, который предоставляет высококачественные услуги диагностики. Она стремится обеспечить пациентам комфорт и уверенность во время обследования.</p>
+								</div>
 							</article>
 						</div>
 					</div>
 					<div class="row aln-center">
-						<div class="col col-6">
+						<div class="col-6 col-12-medium">
 							<article class="box style1">
 								<a class="image featured"><img src="images/oksana1.jpg" alt="" /></a>
 								<h3>Оксана Васильевна Игнатьева</h3>
 								<p>Администратор</p>
 							</article>
 						</div>
-						<div class="col col-6">
+						<div class="col-6 col-12-medium">
 							<article class="box style1">
 								<a class="image featured"><img src="images/tanya.jpg" alt="" /></a>
-								<h3>Татьяна Уварова</h3>
+								<h3>Татьяна Александровна Уварова</h3>
 								<p>Администратор</p>
 							</article>
 						</div>
 					</div>
 				</div>
 			</article>
+
+			<script>
+				function toggleInfo(infoId) {
+					const infoElement = document.getElementById(infoId);
+					if (infoElement.style.display === "none") {
+						infoElement.style.display = "block";
+					} else {
+						infoElement.style.display = "none";
+					}
+				}
+			</script>
 		
 				<!-- New Section: Правовые документы -->
 			<article id="contact" class="wrapper style4">
@@ -127,7 +165,7 @@
 				<div class="container large">
 					<footer>
 						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li> ООО УЗИ кабинет Исаевой &copy; Все права защищены, 2024</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 				</div>
