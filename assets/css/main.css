@@ -242,8 +242,9 @@ input, select, textarea {
 		margin: 3em 0 0 0;
 	}
 
+
 		footer > p {
-			font-size: 0.75em;
+			font-size: 3vw;
 		}
 
 /* Container */
@@ -1632,7 +1633,7 @@ input, select, textarea {
 			table.default td {
 				 text-align: left;
 				 font-weight: 450;
-				 width: 90%;
+				 width: 80%;
 				 position: relative; /* Ensure shadow is relative to the cell */
 				 padding: 10px; /* Add padding for better spacing  */
 				 transition: box-shadow .2s ease-in-out;
@@ -1678,7 +1679,7 @@ input, select, textarea {
 
 		.image.featured img {
 			display: inline;
-			margin: 0 0 2em 0;
+			margin: 2em 0 2em 0;
 			width: 80%;
 			height: auto;
 
@@ -1954,10 +1955,18 @@ input, select, textarea {
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 15px;
+
 	}
+
 
 		.box.style1 {
 			padding: 2em 5em 2em 5em;
+			flex: 1; /* Makes the box fill the available height in its row */
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between; /* Distributes content inside the box */
+			padding: 1em; /* Optional: Adjusts padding for better spacing */
+			box-sizing: border-box; /* Ensures padding doesn't affect height */
 		}
 
 			.box.style1 h3 {
@@ -2227,19 +2236,33 @@ input, select, textarea {
 	}
 
 	.carousel__item {
-		flex: 0 0 auto; /* Prevent items from shrinking */
+		flex: 0 0 auto;
 		width: 33.33%; /* Each item takes 1/3 of the width */
-		height: 300px; /* Set a fixed height for uniformity */
-		position: relative; /* For item-specific styling */
+		display: flex;
+		align-items: center; /* Centers image vertically */
+		justify-content: center; /* Centers image horizontally */
+		position: relative;
 	}
 
 	.carousel__item img {
-		width: 100%; /* Fill the item width */
-		height: 100%; /* Maintain aspect ratio */
-		border-radius: 10px; /* Optional: rounded corners */
-		object-fit: cover; /* Crops the image to fill the container without stretching */
+		height: 100%; /* Set image height to fill the item */
+		width: 100%; /* Keep width auto to maintain aspect ratio */
+		object-fit: cover; /* Crop images to fill the item uniformly */
+	}
+	
+		/* Media query for medium screens */
+	@media (max-width: 1024px) {
+		.carousel__item {
+			width: 50%; /* Shows 2 items on medium screens */
+		}
 	}
 
+	/* Media query for small screens */
+	@media (max-width: 768px) {
+		.carousel__item {
+			width: 100%; /* Shows 1 item on small screens */
+		}
+	}
 	.overlay {
 		content: '';
 		position: absolute;
@@ -2251,6 +2274,9 @@ input, select, textarea {
 		z-index: 1; /* Layering above content */
 	}
 
+	.doctor-info {
+		text-align: left;
+	}
 
 /* Copyright */
 
