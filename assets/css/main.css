@@ -2100,12 +2100,26 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
+			text-align: center; /* Keeps the navigation items horizontally centered */
 		}
-
+		
 		#nav li {
 			display: inline-block;
 			padding-left: 0;
 		}
+		
+		/* Make the eye icon bigger */
+		#nav li a i {
+			font-size: 25px; /* Increase the size of the icon */
+			vertical-align: middle; /* Centers the icon vertically */
+		}
+		
+		/* Push only the last item to the right */
+		#nav li:last-child {
+			margin-left: auto; /* Pushes the last item (eye icon) to the far right */
+			text-align: right; /* Ensures the last item aligns to the right */
+		}
+
 
 		#nav a {
 			-moz-transition: background-color .2s ease-in-out;
@@ -2589,3 +2603,4 @@ input, select, textarea {
 					}
 
 	}
+
